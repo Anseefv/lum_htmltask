@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><u><b>Registration Form</b></u></h1>
+    <form action="">
+    <table>
+        <tr>
+            <th>First Name : </th>
+            <td><input type="text" name="fname" minlength="3" required placeholder="eg:john"></td>
+        </tr>
+        <tr>
+            <th>Last Name : </th>
+            <td><input type="text" name="lname" placeholder="eg:cina"></td>
+        </tr>
+        <tr>
+            <th>Date of Birth :</th>
+            <td><input type="date" name="dob" required></td>
+        </tr>
+        <tr>
+            <th>Gender :</th>
+            <td ><label for="male">male</label><input type="radio" name="gender" id="male" value="male" required >
+                <label for="female">female</label><input type="radio" name="gender" id="female" value="female" ></td>
+        </tr>
+        <tr>
+            <th>Qualification :</th>
+            <td><select name="qualification" required>
+                <option value="sslc">SSLC</option>
+                <option value="PLUS TWO">PLUS TWO</option>
+                <option value="UG">UG</option>
+                <option value="PG">PG</option>
+                <option value="others">others</option>
+            </select></td>
+        </tr>
+        <tr>
+            <th>Address :</th>
+            <td><textarea name="address" id="" cols="30" rows="5" required></textarea></td>
+        </tr>
+        <tr>
+            <th>State :</th>
+            <td><input type="text" name="State" list="state" required placeholder="eg:Kerala"></td>
+            <datalist id="state">
+                <option value="Andhra Pradesh">
+                <option value="Arunachal Pradesh"> 
+                <option value="Assam">
+                <option value="Bihar">
+                <option value="Chhattisgarh"> 
+                <option value="Goa">
+                <option value="Gujarat">
+                <option value="Haryana">
+                <option value="Himachal Pradesh">
+                <option value="Jharkhand">
+                <option value="Karnataka">
+                <option value="Kerala">
+                <option value="Madhya Pradesh">
+                <option value="Maharashtra">
+                <option value="Manipur">
+                <option value="Meghalaya">
+                <option value="Mizoram"> 
+                <option value="Nagaland"> 
+                <option value="Odisha"> 
+                <option value="Punjab">
+                <option value="Rajasthan">
+                <option value="Sikkim">
+                <option value="Tamil Nadu">
+                <option value="Telangana">
+                <option value="Tripura">
+                <option value="Uttar Pradesh">
+                <option value="Uttarakhand">
+                <option value="West Bengal">
+            </datalist>
+        </tr>
+        <tr>
+            <th>Pincode : </th>
+            <td><input type="text" name="pincode" id="" pattern="^[1-9][0-9]{5}"></td>
+        </tr>
+        <tr>
+            <th>Email : </th>
+            <td><input type="email" name="email" id="" required></td>
+        </tr>
+        <tr>
+            <th>Phone :</th>
+            <td><input type="text" name="phone" required pattern="(^\+91 )?[9876][0-9]{9}" value="+91 "></td>
+        </tr>
+        <tr>
+            <th>User Name :</th>
+            <td><input type="text"  name="uname" required minlength="5" maxlength="12"></td>
+        </tr>
+        <tr>
+            <th>Password :</th>
+            <td><input type="password" name="password" id="" minlength="8" required></td>
+        </tr>
+        <tr></tr><tr></tr><tr></tr>
+        <tr >
+            <th  colspan="2"><button>Submit</button></th>
+        </tr>
+    </table>
+    </form>    
+</body>
+</html>
